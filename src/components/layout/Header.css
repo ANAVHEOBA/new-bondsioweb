@@ -1,0 +1,11 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 48px 200px 48px 200px; /* Top, Right, Bottom, Left padding */
+  background-color: #FFF9ED;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.app-logo {
+  height: 32px;
+} 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hero-section {
+  text-align: center;
+  padding-top: 0px; /* Aligned with Figma's vertical positioning */
+  padding-bottom: 80px;
+  padding-left: 256px; /* Adjusted to Figma's 256px */
+  padding-right: 256px; /* Adjusted to Figma's 256px */
+  background-color: #FFF9ED; /* Updated background color to match Figma */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem; /* Matches Figma */
+  color: #888; 
+  margin-top: 0px; 
+  margin-bottom: 16px; /* Precise gap to title */
+  font-weight: 600; 
+}
+
+.hero-title {
+  font-size: 3.8rem; /* Matches Figma */
+  font-weight: 800; 
+  color: #1A1A1A; 
+  line-height: 1.05; /* Matches Figma */
+  margin-bottom: 32px; /* Precise gap to description */
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 32px; /* Precise gap to button */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-button {
+  background-color: #FF7F00; /* More vibrant orange */
+  color: white;
+  font-weight: bold;
+  padding: 16px 32px; /* Adjusted to Figma's button padding */
+  border-radius: 9999px; /* Rounded-full */
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.app-button:hover {
+  background-color: #E06B00; /* Darker orange on hover */
+}
+
+.app-showcase-section {
+  text-align: center;
+  padding: 0; /* Removed all vertical padding to minimize gap */
+  margin-top: -100px; /* Increased negative margin to create more overlap */
+  background-color: #FFF9ED; /* As seen in Figma */
+}
+
+.app-showcase-image {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center the image */
 }

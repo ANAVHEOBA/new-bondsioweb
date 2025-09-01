@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/layout/Header';
+import HeroSection from './components/sections/HeroSection';
+import AppShowcaseSection from './components/sections/AppShowcaseSection';
+import FeaturesSection from './components/sections/FeaturesSection';
+import AppDownloadSection from './components/sections/AppDownloadSection';
+import AppDownloadSectionInverted from './components/sections/AppDownloadSectionInverted';
+import TeamworkSection from './components/sections/TeamworkSection';
+import MobileAppDownloadSection from './components/sections/MobileAppDownloadSection';
+import './App.css'; // Assuming you'll keep some global styling
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <HeroSection />
+      <AppShowcaseSection />
+      <FeaturesSection />
+      <AppDownloadSection />
+      <AppDownloadSectionInverted />
+      <TeamworkSection />
+      <MobileAppDownloadSection />
+      {/* Other components will go here */}
     </div>
   );
 }

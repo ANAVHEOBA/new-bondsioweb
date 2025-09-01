@@ -1,0 +1,62 @@
+.features-section {
+  text-align: center;
+  padding: 80px 331px; /* Corrected padding: 80px top/bottom, 331px left/right */
+  background-color:#FFFFFF;
+}
+
+.features-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3275rem; /* 21.24px / 16 = 1.3275rem */
+  font-weight: 600; /* SemiBold */
+  line-height: 1.365; /* 29px / 21.24px = ~1.365 */
+  letter-spacing: -0.006em; /* -0.13px / 21.24px = ~-0.006em */
+  color: #747A82;
+  margin-bottom: 8px; 
+}
+
+.features-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.875rem; /* 46px */
+  font-weight: 700; /* Bold */
+  line-height: 1.434; /* 66px / 46px = ~1.434 */
+  letter-spacing: -0.038em; /* -1.76px / 46px = ~-0.038em */
+  color: #252527;
+  margin-bottom: 32px; /* Corrected gap to features grid (32px from Figma parent frame) */
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* Corrected to 24px gap as per Figma */
+  margin-bottom: 32px; /* Adjusted gap to description */
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px; 
+}
+
+.feature-icon {
+  width: 36px; /* Adjusted icon width */
+  height: 36px; /* Adjusted icon height */
+  margin-bottom: 16px;
+}
+
+.feature-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem; /* Corrected to 16px to match Figma */
+  font-weight: 600; /* SemiBold */
+  color: #333;
+  text-align: center;
+}
+
+.features-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem; /* 14px */
+  color: #666; /* Match Figma's descriptive text color */
+  line-height: 1.6; /* 22.4px / 14px = 1.6 */
+  max-width: 626px; /* Width from Figma's layout panel */
+  margin: 0 auto; 
+} 

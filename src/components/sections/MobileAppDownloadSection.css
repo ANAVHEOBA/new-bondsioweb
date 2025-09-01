@@ -1,0 +1,115 @@
+.mobile-app-download-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  padding: 120px 0; /* Increased vertical padding */
+  margin-top: 0; 
+}
+
+.mobile-app-download-inner-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px; 
+  width: 100%;
+  gap: 100px; /* Increased space between content and image */
+  justify-content: center;
+}
+
+.mobile-app-download-content {
+  width: 500px; /* Adjusted width for the content column */
+  text-align: left;
+}
+
+.mobile-app-subtitle {
+  font-family: 'Open Sans';
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.013em;
+  color: #333; /* Darker color */
+  margin-bottom: 16px;
+}
+
+.mobile-app-title {
+  font-family: 'Open Sans';
+  font-size: 3.2rem; /* 51.2px */
+  font-weight: 800;
+  color: #1A1A1A;
+  line-height: 1.1; /* Tighter line height */
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+
+.mobile-app-description {
+  font-family: 'Open Sans';
+  font-size: 0.95rem; /* 15.2px */
+  color: #444; /* Darker color */
+  line-height: 1.5; 
+  margin-bottom: 40px;
+}
+
+.mobile-app-buttons-container {
+  display: flex;
+  gap: 16px;
+}
+
+.app-store-button,
+.google-play-button {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Increased gap within button */
+  padding: 14px 28px; /* Adjusted padding */
+  background: #FF7F00;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 127, 0, 0.08);
+}
+
+.app-store-button:hover,
+.google-play-button:hover {
+  background: #E06B00;
+}
+
+.app-icon {
+  width: 24px; /* Adjusted icon size */
+  height: 24px; /* Adjusted icon size */
+  display: inline-block;
+}
+
+.button-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem; /* 14.4px */
+  line-height: 1.2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.store-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem; /* 19.2px */
+  font-weight: 700;
+}
+
+.mobile-app-image-placeholder {
+  width: 600px; /* Adjusted to fit the image */
+  height: 600px; /* Adjusted to fit the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-app-image {
+  width: 626px; /* Precise width from Figma */
+  height: 600px; /* Precise height from Figma */
+  object-fit: contain;
+  display: block;
+} 
