@@ -51,9 +51,9 @@
 .google-play-button {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  background: #7B61FF;
+  gap: 12px; /* Matched from MobileAppDownloadSection.css */
+  padding: 14px 28px; /* Matched from MobileAppDownloadSection.css */
+  background: #9E88FD;
   color: #fff;
   border: none;
   border-radius: 9999px;
@@ -62,23 +62,23 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(123, 97, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(158, 136, 253, 0.08);
 }
 
 .app-store-button:hover,
 .google-play-button:hover {
-  background: #6A50E5;
+  background: #7B61FF;
 }
 
 .app-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px; /* Matched from MobileAppDownloadSection.css */
+  height: 24px; /* Matched from MobileAppDownloadSection.css */
   display: inline-block;
 }
 
 .button-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem; /* Matched from MobileAppDownloadSection.css */
   line-height: 1.2;
   text-align: left;
   display: flex;
@@ -88,7 +88,7 @@
 
 .store-name {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem; /* Matched from MobileAppDownloadSection.css */
   font-weight: 700;
 }
 

@@ -5,32 +5,33 @@
 }
 
 .teamwork-subtitle {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.875rem; /* 14px */
+  font-family: 'Open Sans',;
+  font-size: 0.895rem; /* 14px */
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.013em;
   color: #747A82;
-  margin-bottom: 8px; 
+  margin-bottom: 1px;
+   /* Precise gap to title */
 }
 
 .teamwork-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-size: 2.875rem; /* 46px */
   font-weight: 700;
   line-height: 1.434;
   letter-spacing: -0.038em;
   color: #252527;
-  margin-bottom: 16px; 
+  margin-bottom: 16px; /* Precise gap to description */
 }
 
 .teamwork-description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-size: 0.9375rem; /* 15px */
   color: #666;
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto 60px auto; 
+  margin: 0 auto 40px auto; /* Precise bottom margin to image */
 }
 
 .teamwork-full-layout-image {

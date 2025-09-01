@@ -60,7 +60,7 @@
   align-items: center;
   gap: 12px; /* Increased gap within button */
   padding: 14px 28px; /* Adjusted padding */
-  background: #FF7F00;
+  background: #9E88FD; /* Updated to Figma purple */
   color: #fff;
   border: none;
   border-radius: 9999px;
@@ -69,12 +69,12 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(255, 127, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(158, 136, 253, 0.08); /* Subtle purple shadow */
 }
 
 .app-store-button:hover,
 .google-play-button:hover {
-  background: #E06B00;
+  background: #7B61FF; /* Slightly darker purple on hover */
 }
 
 .app-icon {
