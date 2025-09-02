@@ -1,0 +1,54 @@
+/* src/components/common/FaqItem.css */
+.faq-item {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .faq-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+  }
+  
+  .faq-text {
+    flex-grow: 1;
+  }
+  
+  .faq-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    /* Removed transform transition */
+  }
+  
+  /* Removed the rotation effect since we're using actual images */
+  
+  .faq-answer {
+    padding: 0 20px 16px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    border-top: 1px solid #eee;
+  }
+  
+  .faq-answer p {
+    margin: 0;
+  }

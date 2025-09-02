@@ -7,6 +7,12 @@
   margin-top: 0; 
 }
 
+@media (max-width: 768px) {
+  .mobile-app-download-section {
+    padding: 60px 20px;
+  }
+}
+
 .mobile-app-download-inner-container {
   display: flex;
   align-items: center;
@@ -16,13 +22,29 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .mobile-app-download-inner-container {
+    flex-direction: column-reverse; /* Stack image on top of text */
+    gap: 40px;
+    text-align: center;
+  }
+}
+
 .mobile-app-download-content {
   width: 500px; /* Adjusted width for the content column */
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .mobile-app-download-content {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
 .mobile-app-subtitle {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem; /* 16px */
   font-weight: 600;
   line-height: 1.25;
@@ -31,8 +53,15 @@
   margin-bottom: 16px;
 }
 
+@media (max-width: 768px) {
+  .mobile-app-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+}
+
 .mobile-app-title {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 3.2rem; /* 51.2px */
   font-weight: 800;
   color: #1A1A1A;
@@ -41,12 +70,27 @@
   margin-bottom: 24px;
 }
 
+@media (max-width: 768px) {
+  .mobile-app-title {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+}
+
 .mobile-app-description {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem; /* 15.2px */
   color: #444; /* Darker color */
   line-height: 1.5; 
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .mobile-app-description {
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+  }
 }
 
 .mobile-app-buttons-container {
@@ -54,13 +98,20 @@
   gap: 16px;
 }
 
+@media (max-width: 768px) {
+  .mobile-app-buttons-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+}
+
 .app-store-button,
 .google-play-button {
   display: flex;
   align-items: center;
-  gap: 12px; /* Increased gap within button */
-  padding: 14px 28px; /* Adjusted padding */
-  background: #9E88FD; /* Updated to Figma purple */
+  gap: 12px; 
+  padding: 14px 28px; 
+  background: #9E88FD;
   color: #fff;
   border: none;
   border-radius: 9999px;
@@ -69,23 +120,34 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(158, 136, 253, 0.08); /* Subtle purple shadow */
+  box-shadow: 0 2px 8px rgba(158, 136, 253, 0.08);
+}
+
+@media (max-width: 768px) {
+  .app-store-button,
+  .google-play-button {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
 
 .app-store-button:hover,
 .google-play-button:hover {
-  background: #7B61FF; /* Slightly darker purple on hover */
+  background: #7B61FF;
 }
 
 .app-icon {
-  width: 24px; /* Adjusted icon size */
-  height: 24px; /* Adjusted icon size */
+  width: 24px; 
+  height: 24px; 
   display: inline-block;
 }
 
 .button-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.9rem; /* 14.4px */
+  font-size: 0.9rem; 
   line-height: 1.2;
   text-align: left;
   display: flex;
@@ -95,21 +157,35 @@
 
 .store-name {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem; /* 19.2px */
+  font-size: 1.2rem; 
   font-weight: 700;
 }
 
 .mobile-app-image-placeholder {
-  width: 600px; /* Adjusted to fit the image */
-  height: 600px; /* Adjusted to fit the image */
+  width: 600px; 
+  height: 600px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .mobile-app-image-placeholder {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .mobile-app-image {
-  width: 626px; /* Precise width from Figma */
-  height: 600px; /* Precise height from Figma */
+  width: 600px; 
+  height: 600px; 
   object-fit: contain;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .mobile-app-image {
+    width: 90%;
+    height: auto;
+  }
 } 

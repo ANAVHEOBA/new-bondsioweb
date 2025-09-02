@@ -1,62 +1,329 @@
 .features-section {
   text-align: center;
-  padding: 80px 331px; /* Corrected padding: 80px top/bottom, 331px left/right */
-  background-color:#FFFFFF;
+  padding: 80px 331px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 40px 20px;
+  }
 }
 
 .features-subtitle {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.3275rem; /* 21.24px / 16 = 1.3275rem */
-  font-weight: 600; /* SemiBold */
-  line-height: 1.365; /* 29px / 21.24px = ~1.365 */
-  letter-spacing: -0.006em; /* -0.13px / 21.24px = ~-0.006em */
+  font-size: 1.3275rem;
+  font-weight: 600;
+  line-height: 1.365;
+  letter-spacing: -0.006em;
   color: #747A82;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .features-subtitle {
+    font-size: 0.9rem;
+  }
 }
 
 .features-title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.875rem; /* 46px */
-  font-weight: 700; /* Bold */
-  line-height: 1.434; /* 66px / 46px = ~1.434 */
-  letter-spacing: -0.038em; /* -1.76px / 46px = ~-0.038em */
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 1.434;
+  letter-spacing: -0.038em;
   color: #252527;
-  margin-bottom: 32px; /* Corrected gap to features grid (32px from Figma parent frame) */
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .features-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
 }
 
 .features-grid {
   display: flex;
   justify-content: center;
-  gap: 24px; /* Corrected to 24px gap as per Figma */
-  margin-bottom: 32px; /* Adjusted gap to description */
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .feature-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 150px; 
+  max-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .feature-item {
+    max-width: none;
+    width: 100%;
+  }
 }
 
 .feature-icon {
-  width: 36px; /* Adjusted icon width */
-  height: 36px; /* Adjusted icon height */
+  width: 36px;
+  height: 36px;
   margin-bottom: 16px;
 }
 
 .feature-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem; /* Corrected to 16px to match Figma */
-  font-weight: 600; /* SemiBold */
+  font-size: 1rem;
+  font-weight: 600;
   color: #333;
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .feature-text {
+    font-size: 0.9rem;
+  }
+}
+
 .features-description {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.875rem; /* 14px */
-  color: #666; /* Match Figma's descriptive text color */
-  line-height: 1.6; /* 22.4px / 14px = 1.6 */
-  max-width: 626px; /* Width from Figma's layout panel */
-  margin: 0 auto; 
-} 
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 626px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .features-description {
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+}
+
+.download-btn {
+  background-color: #FF9B00;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 60px;
+}
+
+.download-btn:hover {
+  background-color: #e68c00;
+}
+
+/* Phone Showcase Grid */
+.phone-showcase-grid {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Arrow container - positioned absolutely */
+.arrow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Individual arrow styling */
+.arrow {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.1));
+  transform-origin: center;
+}
+
+.arrow-1 {
+  top: 30%;
+  left: 35%;
+  transform: rotate(-45deg);
+}
+
+.arrow-2 {
+  top: 55%;
+  left: 40%;
+  transform: rotate(-135deg);
+}
+
+.arrow-3 {
+  top: 75%;
+  left: 45%;
+  transform: rotate(-45deg);
+}
+
+/* Phone items */
+.phone-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+.phone-img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+  transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+  .phone-img {
+    width: 200px;
+    transform: rotate(0deg);
+  }
+}
+
+.phone-content h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #252527;
+  margin-bottom: 12px;
+}
+
+.phone-content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .phone-content h3 {
+    font-size: 1.2rem;
+  }
+  .phone-content p {
+    font-size: 0.8rem;
+    max-width: 250px;
+  }
+}
+
+/* Layout for alternating phone positions */
+.phone-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+  position: relative;
+  width: 100%;
+}
+
+.top-right {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.middle-left {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.middle-right {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.bottom-left {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.phone-layout .phone-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Ensure content wraps properly */
+.phone-layout .phone-container {
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Fix positioning */
+.phone-layout .phone-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .phone-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .phone-layout .phone-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .phone-img {
+    width: 200px;
+    transform: rotate(0deg);
+  }
+
+  .arrow {
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .arrow-1 {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .arrow-2 {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .arrow-3 {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}

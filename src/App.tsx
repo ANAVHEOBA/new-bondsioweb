@@ -2,11 +2,15 @@ import React from 'react';
 import Header from './components/layout/Header';
 import HeroSection from './components/sections/HeroSection';
 import AppShowcaseSection from './components/sections/AppShowcaseSection';
-import FeaturesSection from './components/sections/FeaturesSection';
-import AppDownloadSection from './components/sections/AppDownloadSection';
-import AppDownloadSectionInverted from './components/sections/AppDownloadSectionInverted';
 import TeamworkSection from './components/sections/TeamworkSection';
+import FeaturesSection from './components/sections/FeaturesSection';
+//import AppDownloadSection from './components/sections/AppDownloadSection';
+//import AppDownloadSectionInverted from './components/sections/AppDownloadSectionInverted';
+import TestimonialsSection from './components/sections/TestimonialsSection';
+import FaqSection from './components/sections/FaqSection';
 import MobileAppDownloadSection from './components/sections/MobileAppDownloadSection';
+import Footer from './components/layout/Footer';
+
 import './App.css'; // Assuming you'll keep some global styling
 
 function App() {
@@ -15,11 +19,12 @@ function App() {
       <Header />
       <HeroSection />
       <AppShowcaseSection />
-      <FeaturesSection />
-      <AppDownloadSection />
-      <AppDownloadSectionInverted />
       <TeamworkSection />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <FaqSection />
       <MobileAppDownloadSection />
+      <Footer />
       {/* Other components will go here */}
     </div>
   );

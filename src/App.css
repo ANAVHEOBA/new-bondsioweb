@@ -48,12 +48,27 @@
   background-color: #FFF9ED; /* Updated background color to match Figma */
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+}
+
 .hero-subtitle {
   font-size: 1.2rem; /* Matches Figma */
   color: #888; 
   margin-top: 0px; 
   margin-bottom: 16px; /* Precise gap to title */
   font-weight: 600; 
+}
+
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
 }
 
 .hero-title {
@@ -64,6 +79,14 @@
   margin-bottom: 32px; /* Precise gap to description */
 }
 
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+}
+
 .hero-description {
   font-size: 1.125rem;
   color: #555;
@@ -71,6 +94,13 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-description {
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
 }
 
 .app-button {
@@ -84,6 +114,13 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .app-button {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
+
 .app-button:hover {
   background-color: #E06B00; /* Darker orange on hover */
 }
@@ -93,6 +130,14 @@
   padding: 0; /* Removed all vertical padding to minimize gap */
   margin-top: -100px; /* Increased negative margin to create more overlap */
   background-color: #FFF9ED; /* As seen in Figma */
+}
+
+@media (max-width: 768px) {
+  .app-showcase-section {
+    margin-top: 0; /* Remove negative margin on smaller screens */
+    padding-top: 20px; /* Add some padding back */
+    padding-bottom: 20px;
+  }
 }
 
 .app-showcase-image {
