@@ -285,3 +285,31 @@
     transform: rotate(0deg);
   }
 }
+
+
+/* Arrow Containers */
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.arrow-icon {
+  width: 400px; /* Increased from 40px to 80px */
+  height: auto;
+  opacity: 0.7;
+}
+
+/* Mobile responsiveness for arrows */
+@media (max-width: 768px) {
+  .arrow-container {
+    margin: 20px 0;
+  }
+  
+  .arrow-icon {
+    width: 50px; /* Increased from 30px to 50px */
+  }
+}
+
+

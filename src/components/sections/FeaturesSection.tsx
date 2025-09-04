@@ -48,6 +48,11 @@ const FeaturesSection = () => {
         </div>
       </div>
 
+      {/* Arrow between 1st and 2nd phone */}
+      <div className="arrow-container">
+        <img src="/Vector19.png" alt="Arrow" className="arrow-icon" />
+      </div>
+
       {/* Second Diagonal Phone Showcase Grid */}
       <div className="phone-showcase-grid diagonal">
         <div className="phone-layout">
@@ -63,6 +68,11 @@ const FeaturesSection = () => {
         </div>
       </div>
 
+      {/* Arrow between 2nd and 3rd phone */}
+      <div className="arrow-container">
+        <img src="/Vector20.png" alt="Arrow" className="arrow-icon" />
+      </div>
+
       {/* Third Phone Showcase Grid - Back to original layout */}
       <div className="phone-showcase-grid third">
         <div className="phone-layout">
@@ -76,6 +86,11 @@ const FeaturesSection = () => {
             <img src="/Device (2).png" alt="Phone" className="phone-img" />
           </div>
         </div>
+      </div>
+
+      {/* Arrow between 3rd and 4th phone */}
+      <div className="arrow-container">
+        <img src="/Vector19.png" alt="Arrow" className="arrow-icon" />
       </div>
 
       {/* Fourth Diagonal Phone Showcase Grid */}

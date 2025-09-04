@@ -1,22 +1,32 @@
+/* ==========  index.css  –  complete replacement  ========== */
+
+/* 1. Reset / base */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: auto; /* Allow vertical scrolling if needed */
+  overflow-x: hidden;          /* keep horizontal locked */
+  overflow-y: auto;            /* still scrollable … */
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+               'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+               sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFF9ED; /* Match your design background */
+  background-color: #FFF9ED;   /* your page background */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* 2. Hide the vertical scrollbar while keeping scroll behaviour */
+::-webkit-scrollbar {           /* Chrome / Edge / Safari */
+  display: none;
+}
+html {                          /* Firefox */
+  scrollbar-width: none;
 }
