@@ -6,6 +6,7 @@ import TeamworkSection from './components/sections/TeamworkSection';
 import FeaturesSection from './components/sections/FeaturesSection';
 //import AppDownloadSection from './components/sections/AppDownloadSection';
 //import AppDownloadSectionInverted from './components/sections/AppDownloadSectionInverted';
+import VideoSection from './components/sections/VideoSection';
 import TestimonialsSection from './components/sections/TestimonialsSection';
 import FaqSection from './components/sections/FaqSection';
 import MobileAppDownloadSection from './components/sections/MobileAppDownloadSection';
@@ -21,6 +22,7 @@ function App() {
       <AppShowcaseSection />
       <TeamworkSection />
       <FeaturesSection />
+      <VideoSection />
       <TestimonialsSection />
       <FaqSection />
       <MobileAppDownloadSection />

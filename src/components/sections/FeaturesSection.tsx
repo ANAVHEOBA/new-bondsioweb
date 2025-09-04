@@ -1,15 +1,14 @@
 import React from 'react';
 import './FeaturesSection.css';
 
-const FeaturesSection: React.FC = () => {
+const FeaturesSection = () => {
   return (
     <section className="features-section">
       {/* Header */}
-      <p className="features-subtitle">Find out more</p>
+      <p className="features-subtitle">An Online Place To Find Your Offline People</p>
       <h2 className="features-title">
-        Connecting you with everyone;
-        <br />
-        Anytime, anywhere.
+        Bonds That Matter,<br />
+        Moments That Last
       </h2>
 
       {/* Feature Icons */}
@@ -30,62 +29,67 @@ const FeaturesSection: React.FC = () => {
 
       {/* Description & Button */}
       <p className="features-description">
-        It implies that the individual possesses the necessary skills, knowledge, and resources to complete a given task successfully.
-        A capable person is confident in their abilities and can handle challenges with ease. They are typically reliable, responsible, and competent.
+        Forget the endless scrolling. Bondsio is built for real people, real moments, and real bonds. Wherever life takes you, we make it easier to discover your people and grow with them.
       </p>
       <button className="download-btn">Download App</button>
 
-      {/* Phone Showcase Grid */}
+      {/* First Phone Showcase Grid */}
       <div className="phone-showcase-grid">
-        {/* First Phone - Top Right */}
-        <div className="phone-layout top-right">
+        <div className="phone-layout">
           <div className="phone-container">
             <div className="phone-content">
-              <h3>Active, but unsure where and what to do?</h3>
-              <p>a personal intelligence system that helps you write, express yourself, and get things done effortlessly. Its groundbreaking privacy features ensure that no one else can access your information.</p>
+              <h3>Wherever life takes you,<br />Bondsio always has a place for you</h3>
+              <p>
+                Some days you're chasing new adventures, and other days you're just looking for quiet company. With Bondsio, you don't have to fit a mold—every step, every pace, every kind of presence is welcome. This is your space to belong, no matter what belonging looks like for you.
+              </p>
             </div>
-            <img src="/Device.png" alt="Phone 1" className="phone-img" />
+            <img src="/Device.png" alt="Phone" className="phone-img" />
           </div>
         </div>
+      </div>
 
-        {/* Second Phone - Middle Left */}
-        <div className="phone-layout middle-left">
+      {/* Second Diagonal Phone Showcase Grid */}
+      <div className="phone-showcase-grid diagonal">
+        <div className="phone-layout">
           <div className="phone-container">
-            <img src="/Device (1).png" alt="Phone 2" className="phone-img" />
+            <img src="/Device (1).png" alt="Phone" className="phone-img" />
             <div className="phone-content">
-              <h3>Active, but unsure where and what to do?</h3>
-              <p>a personal intelligence system that helps you write, express yourself, and get things done effortlessly. Its groundbreaking privacy features ensure that no one else can access your information.</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Third Phone - Middle Right */}
-        <div className="phone-layout middle-right">
-          <div className="phone-container">
-            <div className="phone-content">
-              <h3>Active, but unsure where and what to do?</h3>
-              <p>a personal intelligence system that helps you write, express yourself, and get things done effortlessly. Its groundbreaking privacy features ensure that no one else can access your information.</p>
-            </div>
-            <img src="/Device (2).png" alt="Phone 3" className="phone-img" />
-          </div>
-        </div>
-
-        {/* Fourth Phone - Bottom Left */}
-        <div className="phone-layout bottom-left">
-          <div className="phone-container">
-            <img src="/Device (3).png" alt="Phone 4" className="phone-img" />
-            <div className="phone-content">
-              <h3>Active, but unsure where and what to do?</h3>
-              <p>a personal intelligence system that helps you write, express yourself, and get things done effortlessly. Its groundbreaking privacy features ensure that no one else can access your information.</p>
+              <h3>Shared Moments Become Real Connections</h3>
+              <p>
+                Friendship doesn't always start with big declarations. On Bondsio, small shared moments grow into something bigger—bonds of trust, care, and real belonging.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Arrows */}
-        <div className="arrow-container">
-          <img src="/Vector19.png" alt="Arrow" className="arrow arrow-1" />
-          <img src="/Vector20.png" alt="Arrow" className="arrow arrow-2" />
-          <img src="/Vector19.png" alt="Arrow" className="arrow arrow-3" />
+      {/* Third Phone Showcase Grid - Back to original layout */}
+      <div className="phone-showcase-grid third">
+        <div className="phone-layout">
+          <div className="phone-container">
+            <div className="phone-content">
+              <h3>Togetherness, Not Alone</h3>
+              <p>
+                It's one thing to be surrounded by people, and another to feel like you truly belong. Bondsio helps you discover communities/Bonds where connection flows naturally—because when we share activities, laughter, or even silence, we find a deeper kind of togetherness.
+              </p>
+            </div>
+            <img src="/Device (2).png" alt="Phone" className="phone-img" />
+          </div>
+        </div>
+      </div>
+
+      {/* Fourth Diagonal Phone Showcase Grid */}
+      <div className="phone-showcase-grid fourth">
+        <div className="phone-layout">
+          <div className="phone-container">
+            <img src="/Device (3).png" alt="Phone" className="phone-img" />
+            <div className="phone-content">
+              <h3>Just The Way You Are</h3>
+              <p>
+                Bondsio is built for you—for people who value presence over performance. You don't need to keep up, stand out, or fit in—you just need to be you, just the way you are.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
