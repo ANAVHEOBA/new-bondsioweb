@@ -1,4 +1,3 @@
-// src/components/layout/Footer.tsx
 import React from 'react';
 import './Footer.css';
 
@@ -31,7 +30,6 @@ const Footer: React.FC = () => {
       <div className="footer-bottom">
         <p className="copyright">© 2025 Bondsio. All rights reserved.</p>
         <div className="footer-links">
-          <a href="#" className="footer-link">Terms & Conditions</a>
           <a href="#" className="footer-link">Privacy</a>
         </div>
       </div>

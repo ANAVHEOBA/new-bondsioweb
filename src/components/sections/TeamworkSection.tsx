@@ -4,12 +4,13 @@ import './TeamworkSection.css';
 const TeamworkSection: React.FC = () => {
   return (
     <section className="teamwork-section">
-      <p className="teamwork-subtitle">Find out more</p>
+      <p className="teamwork-subtitle">Bondsio Turns Moments Into Communities</p>
       <h2 className="teamwork-title">
-        It Takes a Village, but begins with you
+        Connection Isn’t Accidental —<br />
+        Bondsio Makes It Happen
       </h2>
       <p className="teamwork-description">
-        It implies that the individual possesses the necessary skills, knowledge, and resources to complete a given task successfully. A capable person is confident.
+        Bondsio is designed to take you from scrolling alone to living in moments that matter—where every feature works to bring people closer, naturally.
       </p>
       <div className="teamwork-content-grid">
         <div className="teamwork-features-left">
@@ -17,27 +18,27 @@ const TeamworkSection: React.FC = () => {
             <div className="feature-card-icon-wrapper">
               <img src="/MagnifyingGlass (1).png" alt="Search" className="feature-card-icon" />
             </div>
-            <h3 className="feature-card-title">Build Connections</h3>
+            <h3 className="feature-card-title">Social Posting With Purpose</h3>
             <p className="feature-card-description">
-              Developing strong relationships can lead to collaboration, support, and shared opportunities.
+              Every post you share isn't just content. It's an open door. Bondsio makes posting the start of conversations, not the end of them.
             </p>
           </div>
           <div className="feature-card">
             <div className="feature-card-icon-wrapper">
               <img src="/MagnifyingGlass (1).png" alt="Search" className="feature-card-icon" />
             </div>
-            <h3 className="feature-card-title">Share Your Journey</h3>
+            <h3 className="feature-card-title">Real-Time Engagement</h3>
             <p className="feature-card-description">
-              By communicating your experiences, you empower others to learn and grow alongside you.
+              Because life doesn't wait. Whether it's a last-minute hangout or a live update, Bondsio keeps bonds alive in the moment.
             </p>
           </div>
           <div className="feature-card">
             <div className="feature-card-icon-wrapper">
               <img src="/MagnifyingGlass (1).png" alt="Search" className="feature-card-icon" />
             </div>
-            <h3 className="feature-card-title">Create Lasting Impact</h3>
+            <h3 className="feature-card-title">Interest-Based Bonds</h3>
             <p className="feature-card-description">
-              Striving for an ever-lasting meaningful contributions that can inspire change and foster a sense of community amongst everyone.
+              Not just another “group.” Bonds are living channels built around what matters most to you, where belonging feels instant.
             </p>
           </div>
         </div>
@@ -49,27 +50,27 @@ const TeamworkSection: React.FC = () => {
             <div className="feature-card-icon-wrapper">
               <img src="/MagnifyingGlass (1).png" alt="Search" className="feature-card-icon" />
             </div>
-            <h3 className="feature-card-title">Find Your People</h3>
+            <h3 className="feature-card-title">Community-Driven Activities</h3>
             <p className="feature-card-description">
-              It implies that the individual possesses the necessary skills, knowledge, and resources to complete a given task successfully.
+              Spontaneous. Simple. Human. Anyone can spark an activity, and everyone can be part of it.
             </p>
           </div>
           <div className="feature-card">
             <div className="feature-card-icon-wrapper">
               <img src="/MagnifyingGlass (1).png" alt="Search" className="feature-card-icon" />
             </div>
-            <h3 className="feature-card-title">Embrace Diversity</h3>
+            <h3 className="feature-card-title">Stories That Grow</h3>
             <p className="feature-card-description">
-              Welcoming different perspectives enriches discussions and drives innovative solutions.
+              One hello becomes a chat. One chat becomes a meetup/activity. One meetup/activity becomes your “Bond”.
             </p>
           </div>
           <div className="feature-card">
             <div className="feature-card-icon-wrapper">
               <img src="/MagnifyingGlass (1).png" alt="Search" className="feature-card-icon" />
             </div>
-            <h3 className="feature-card-title">Cultivate Resilience</h3>
+            <h3 className="feature-card-title">Activities That Suit You</h3>
             <p className="feature-card-description">
-              Building the ability to adapt and recover from setbacks is crucial for sustained growth.
+              No endless searching, no fatigue. Just quick, smart suggestions that point you straight to activities and people that fit you.
             </p>
           </div>
         </div>

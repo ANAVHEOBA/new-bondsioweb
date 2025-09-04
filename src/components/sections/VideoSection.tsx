@@ -1,5 +1,3 @@
-// src/components/sections/VideoSection.tsx
-
 import React from 'react';
 import './VideoSection.css';
 
@@ -7,10 +5,10 @@ const VideoSection: React.FC = () => {
   return (
     <section className="video-section">
       <div className="content-wrapper">
-        <h2 className="subtitle">Find out more</h2>
-        <h1 className="title">It Takes a Village, but begins with you</h1>
+        <h2 className="subtitle">How Bondsio Works</h2>
+        <h1 className="title">Your Journey To Belonging Starts Here</h1>
         <p className="description">
-          It implies that the individual possesses the necessary skills, knowledge, and resources to complete a given task successfully. A capable person is confident.
+          Finding belonging doesn't have to be complicated. Bondsio makes it natural: Find your people, join in the fun, and watch how one moment turns into many.
         </p>
       </div>
 

@@ -1,4 +1,3 @@
-// src/components/sections/FaqSection.tsx
 import React from 'react';
 import FaqItem from '../common/FaqItem';
 import './FaqSection.css';
@@ -6,41 +5,41 @@ import './FaqSection.css';
 const FaqSection: React.FC = () => {
   const faqs = [
     {
-      question: 'How can I find community near me?',
-      answer: 'You have to have an established company that is registered. Your business model needs to be in a startup mindset, scalable, have international potential, and have a unique idea.',
+      question: 'Do I have to be super social to use Bondsio?',
+      answer: 'Not at all. We built Bondsio for you, exactly as you are. Whether you\'re outgoing or prefer your own space, Bondsio meets you where you are and helps you connect at your own pace.',
     },
     {
-      question: 'Does Bondsio offer only community events?',
-      answer: 'Yes, currently we focus on connecting users through community events, but we’re expanding to include meetups, workshops, and networking sessions.',
+      question: 'What makes Bondsio different?',
+      answer: 'Bondsio turns moments into communities. It’s not about constant scrolling — it’s about meaningful connections that grow naturally from real-life experiences.',
     },
     {
-      question: 'Can I meet friends with the app?',
-      answer: 'Absolutely! The app allows you to connect with friends and see their activity, join shared events, and chat directly within the platform.',
+      question: 'How do I know it\'s safe?',
+      answer: 'Your privacy and safety are our top priorities. We use end-to-end encryption, community moderation, and clear reporting tools to keep interactions respectful and secure.',
     },
     {
-      question: 'Does Bondsio offer recommendations about what event to attend?',
-      answer: 'Yes, our AI-powered recommendation engine suggests events based on your interests, location, and past interactions.',
+      question: 'Is Bondsio available everywhere?',
+      answer: 'Yes, Bondsio is available globally. As long as you have internet access, you can join communities and events near you — no matter where you are.',
     },
     {
       question: 'What kind of community are listed on Bondsio?',
-      answer: 'We feature tech startups, creative communities, wellness groups, local clubs, and professional networks across cities worldwide.',
+      answer: 'We feature a wide range of communities — from wellness and fitness groups to arts & culture, professional networks, and local meetups — all centered around shared interests.',
     },
     {
-      question: 'How much do I pay for the app?',
-      answer: 'The app is free to download and use. Premium features like advanced search and analytics require a subscription starting at $9.99/month.',
+      question: 'Can I create my own circle or activity?',
+      answer: 'Absolutely! You can start your own "Bond" — whether it’s a weekly coffee meetup, a book club, or a hiking group — and invite others to join.',
     },
     {
-      question: 'What are the fees for using Bondsio?',
-      answer: 'There are no transaction fees. We charge a small monthly fee for premium accounts to support ongoing development and security.',
+      question: 'Is Bondsio free to use?',
+      answer: 'Yes, Bondsio is completely free to download and use. There are no hidden fees or subscription costs — just authentic connection.',
     },
   ];
 
   return (
     <section className="faq-section">
       <h3 className="section-title">FAQs</h3>
-      <h2 className="main-title">What are your hidden thoughts...</h2>
+      <h2 className="main-title">Got Questions?</h2>
       <p className="section-subtitle">
-        It implies that the individual possesses the necessary skills, knowledge, and resources to complete a given task successfully. A capable person is confident.
+        We've kept it simple—your most common questions, answered.
       </p>
       <div className="faq-list">
         {faqs.map((faq, index) => (

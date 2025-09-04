@@ -6,17 +6,15 @@ const MobileAppDownloadSection: React.FC = () => {
     <section className="mobile-app-download-section">
       <div className="mobile-app-download-inner-container">
         <div className="mobile-app-download-content">
-          <p className="mobile-app-subtitle">Mobile App</p>
+          <p className="mobile-app-subtitle">Start Connecting Today</p>
           <h2 className="mobile-app-title">
             Download Bondsio
             <br />
             Mobile Application
           </h2>
           <p className="mobile-app-description">
-            It implies that the individual possesses the necessary skills, knowledge, and
-            resources to complete a given task successfully. A capable person is confident
-            in their abilities and can handle challenges with ease. Its groundbreaking privacy
-            features ensure that no one else can access your information
+            Bondsio makes it easy to turn everyday life into shared moments. You can discover bonds, join activities, or create your own.
+            Belonging is now just one tap away and Bondsio goes with you wherever you are.
           </p>
           <div className="mobile-app-buttons-container">
             <button className="app-store-button">
@@ -43,4 +41,4 @@ const MobileAppDownloadSection: React.FC = () => {
   );
 };
 
-export default MobileAppDownloadSection; 
+export default MobileAppDownloadSection;
