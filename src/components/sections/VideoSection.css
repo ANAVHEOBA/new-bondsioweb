@@ -4,7 +4,7 @@
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #f9f9ff; /* Optional: light background if needed */
+  background-color: #f9f9ff;
 }
 
 .content-wrapper {
@@ -41,8 +41,15 @@
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  background-color: #e6e6ff; /* fallback */
+  background-color: #e6e6ff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.video-container:hover {
+  transform: scale(1.01);
 }
 
 .video-container video {
@@ -52,12 +59,146 @@
   display: block;
 }
 
-/* Responsive adjustments */
+/* Fullscreen Toggle Button */
+.fullscreen-toggle {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.video-container:hover .fullscreen-toggle,
+.video-container:focus-within .fullscreen-toggle {
+  opacity: 1;
+}
+
+.fullscreen-toggle:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.fullscreen-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* 📱 MOBILE RESPONSIVE STYLES */
 @media (max-width: 768px) {
-  .title {
-    font-size: 2rem;
+  .video-section {
+    padding: 40px 15px;
   }
+
+  .content-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    line-height: 1.25;
+  }
+
   .description {
     font-size: 0.9rem;
+    margin: 15px auto;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .video-container {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+  }
+
+  .fullscreen-toggle {
+    bottom: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .fullscreen-toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* 📱 EXTRA SMALL MOBILE */
+@media (max-width: 480px) {
+  .video-section {
+    padding: 30px 10px;
+  }
+
+  .content-wrapper {
+    margin-bottom: 25px;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    margin: 12px auto;
+    padding: 0 5px;
+  }
+
+  .video-container {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .fullscreen-toggle {
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .fullscreen-toggle svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* 🖥️ LARGE SCREENS */
+@media (min-width: 1200px) {
+  .video-section {
+    padding: 80px 20px;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin: 25px auto;
+  }
+
+  .video-container {
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
   }
 }

@@ -1,47 +1,99 @@
 /* src/components/sections/FaqSection.css */
 .faq-section {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  }
-  
-  .section-title {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 8px;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.section-title {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* 📱 Mobile spacing improvements */
+@media (max-width: 600px) {
   .main-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 12px; /* Slightly less on mobile */
   }
-  
+
   .section-subtitle {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 40px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    margin-bottom: 32px; /* More breathing room before FAQ list */
+    padding: 0 16px; /* Prevent edge-to-edge text */
   }
-  
+
   .faq-list {
+    gap: 12px; /* Slightly tighter list, but compensated inside FaqItem */
+    padding: 0 8px; /* Avoid edge collision */
+  }
+
+  /* 👇 Target the FaqItem container (assuming it has .faq-item class) */
+  .faq-item {
+    padding: 16px;
+    border-radius: 12px;
+    background: #fafafa;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .faq-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  @media (max-width: 600px) {
-    .main-title {
-      font-size: 2rem;
-    }
-    .section-subtitle {
-      font-size: 0.9rem;
-    }
+
+  .faq-toggle-button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: #eee;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
   }
+
+  .faq-toggle-button:hover {
+    background: #ddd;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+  }
+}

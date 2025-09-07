@@ -52,9 +52,9 @@ const TestimonialsSection: React.FC = () => {
   return (
     <section className="testimonials-section">
       <h3 className="section-title">Testimonials</h3>
-      <h2 className="main-title">What our early users are saying...</h2>
+      <h2 className="main-title">What Our Beta Users Are Saying...</h2>
       <p className="section-subtitle">
-        It implies that the individual possesses the necessary skills, knowledge, and resources to complete a given task successfully. A capable person is confident.
+        We're just getting started, but the excitement is real.
       </p>
       <div className="testimonials-grid">
         {testimonials.map((testimonial, index) => (

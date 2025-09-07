@@ -1,3 +1,4 @@
+/* src/components/sections/MobileAppDownloadSection.css */
 .mobile-app-download-section {
   width: 100%;
   display: flex;
@@ -7,12 +8,6 @@
   margin-top: 0;
 }
 
-@media (max-width: 768px) {
-  .mobile-app-download-section {
-    padding: 60px 20px;
-  }
-}
-
 .mobile-app-download-inner-container {
   display: flex;
   align-items: center;
@@ -20,27 +15,13 @@
   width: 100%;
   gap: 100px;
   justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .mobile-app-download-inner-container {
-    flex-direction: column-reverse;
-    gap: 40px;
-    text-align: center;
-  }
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .mobile-app-download-content {
   width: 500px;
   text-align: left;
-}
-
-@media (max-width: 768px) {
-  .mobile-app-download-content {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-  }
 }
 
 .mobile-app-subtitle {
@@ -53,13 +34,6 @@
   margin-bottom: 16px;
 }
 
-@media (max-width: 768px) {
-  .mobile-app-subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 12px;
-  }
-}
-
 .mobile-app-title {
   font-family: 'Open Sans', sans-serif;
   font-size: 3.2rem;
@@ -70,14 +44,6 @@
   margin-bottom: 24px;
 }
 
-@media (max-width: 768px) {
-  .mobile-app-title {
-    font-size: 2.2rem;
-    line-height: 1.1;
-    margin-bottom: 20px;
-  }
-}
-
 .mobile-app-description {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -86,23 +52,9 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
-  .mobile-app-description {
-    font-size: 0.9rem;
-    margin-bottom: 30px;
-  }
-}
-
 .mobile-app-buttons-container {
   display: flex;
   gap: 16px;
-}
-
-@media (max-width: 768px) {
-  .mobile-app-buttons-container {
-    flex-direction: column;
-    gap: 10px;
-  }
 }
 
 .app-store-button,
@@ -111,7 +63,7 @@
   align-items: center;
   gap: 12px;
   padding: 14px 28px;
-  background: #FF8C00; /* Orange */
+  background: #FF8C00;
   color: #fff;
   border: none;
   border-radius: 9999px;
@@ -121,22 +73,13 @@
   cursor: pointer;
   transition: background 0.2s;
   box-shadow: 0 2px 8px rgba(255, 140, 0, 0.1);
+  text-decoration: none;
+  min-width: 200px;
 }
 
 .app-store-button:hover,
 .google-play-button:hover {
   background: #E67E00;
-}
-
-@media (max-width: 768px) {
-  .app-store-button,
-  .google-play-button {
-    width: 100%;
-    max-width: 250px;
-    justify-content: center;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
 }
 
 .app-icon {
@@ -170,13 +113,7 @@
   background-color: #F3F0FF;
   border-radius: 16px;
   overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .mobile-app-image-placeholder {
-    width: 100%;
-    height: auto;
-  }
+  flex-shrink: 0;
 }
 
 .mobile-app-image {
@@ -186,9 +123,159 @@
   display: block;
 }
 
+/* 📱 MOBILE RESPONSIVE STYLES */
 @media (max-width: 768px) {
-  .mobile-app-image {
-    width: 90%;
+  .mobile-app-download-section {
+    padding: 60px 0;
+  }
+
+  .mobile-app-download-inner-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .mobile-app-download-content {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .mobile-app-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .mobile-app-title {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .mobile-app-description {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .mobile-app-buttons-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .app-store-button,
+  .google-play-button {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    min-width: auto;
+  }
+
+  .button-text {
+    text-align: center;
+  }
+
+  .store-name {
+    font-size: 1.1rem;
+  }
+
+  /* ✅ ENHANCED IMAGE ON MOBILE */
+  .mobile-app-image-placeholder {
+    width: 100%;
     height: auto;
+    max-width: 450px; /* 👈 Increased from 400px → 450px */
+    aspect-ratio: 1;
+    border-radius: 16px; /* 👈 Slightly larger radius for polish */
+    background-color: #F3F0FF;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* 👈 Added subtle shadow */
+    padding: 12px; /* 👈 Inner padding to prevent image edge touching border */
+  }
+
+  .mobile-app-image {
+    width: 100%;
+    height: auto;
+    max-width: 420px; /* 👈 Increased from 360px → 420px */
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+}
+
+/* 📱 EXTRA SMALL MOBILE */
+@media (max-width: 480px) {
+  .mobile-app-download-section {
+    padding: 40px 0;
+  }
+
+  .mobile-app-download-inner-container {
+    gap: 30px;
+    padding: 0 15px;
+  }
+
+  .mobile-app-title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .mobile-app-description {
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+  }
+
+  .app-store-button,
+  .google-play-button {
+    max-width: 250px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .store-name {
+    font-size: 1rem;
+  }
+
+  .button-text {
+    font-size: 0.8rem;
+  }
+
+  /* ✅ ENHANCED IMAGE ON EXTRA SMALL MOBILE */
+  .mobile-app-image-placeholder {
+    max-width: 350px; /* 👈 Increased from 300px → 350px */
+    border-radius: 14px; /* 👈 Slightly softer than desktop */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+  }
+
+  .mobile-app-image {
+    max-width: 320px; /* 👈 Increased from 270px → 320px */
+  }
+}
+
+/* 🖥️ LARGE SCREENS */
+@media (min-width: 1200px) {
+  .mobile-app-download-inner-container {
+    gap: 120px;
+  }
+
+  .mobile-app-title {
+    font-size: 3.5rem;
+  }
+
+  .mobile-app-description {
+    font-size: 1.1rem;
+    margin-bottom: 45px;
+  }
+
+  .app-store-button,
+  .google-play-button {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    min-width: 220px;
+  }
+
+  .store-name {
+    font-size: 1.3rem;
   }
 }

@@ -4,12 +4,6 @@
   background-color: #FFFFFF;
 }
 
-@media (max-width: 768px) {
-  .teamwork-section {
-    padding: 50px 20px;
-  }
-}
-
 .teamwork-subtitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875rem;
@@ -18,12 +12,6 @@
   letter-spacing: -0.013em;
   color: #747A82;
   margin-bottom: 8px;
-}
-
-@media (max-width: 768px) {
-  .teamwork-subtitle {
-    font-size: 0.8rem;
-  }
 }
 
 .teamwork-title {
@@ -36,14 +24,6 @@
   margin-bottom: 16px;
 }
 
-@media (max-width: 768px) {
-  .teamwork-title {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin-bottom: 12px;
-  }
-}
-
 .teamwork-description {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9375rem;
@@ -51,14 +31,6 @@
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto 60px auto;
-}
-
-@media (max-width: 768px) {
-  .teamwork-description {
-    font-size: 0.85rem;
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
 }
 
 .teamwork-content-grid {
@@ -70,28 +42,12 @@
   gap: 12px;
 }
 
-@media (max-width: 768px) {
-  .teamwork-content-grid {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
 .teamwork-features-left,
 .teamwork-features-right {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 344px;
-}
-
-@media (max-width: 768px) {
-  .teamwork-features-left,
-  .teamwork-features-right {
-    width: 100%;
-    max-width: 344px;
-    gap: 10px;
-  }
 }
 
 .teamwork-central-image-container {
@@ -102,14 +58,6 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-}
-
-@media (max-width: 768px) {
-  .teamwork-central-image-container {
-    width: 100%;
-    height: auto;
-    margin: 30px 0;
-  }
 }
 
 .teamwork-central-image {
@@ -132,14 +80,6 @@
   gap: 8px;
 }
 
-.feature-card-icon {
-  width: 20px; /* Reduced from 48px */
-  height: 20px;
-  margin-top: 4px;
-  flex-shrink: 0;
-}
-
-/* Small Yellow Square for Search Icon */
 .feature-card-icon-wrapper {
   display: inline-block;
   width: 20px;
@@ -153,22 +93,285 @@
   margin-bottom: 2px;
 }
 
+.feature-card-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 .feature-card-title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem;
   font-weight: 600;
   color: #252527;
   margin: 0;
   padding: 0;
-  white-space: nowrap; /* Prevents wrapping */
+  white-space: nowrap;
 }
 
 .feature-card-description {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.8125rem; /* 13px */
+  font-size: 0.8125rem;
   font-weight: 400;
   color: #666;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+
+/* 📱 MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .teamwork-section {
+    padding: 50px 20px;
+  }
+
+  .teamwork-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .teamwork-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .teamwork-description {
+    font-size: 0.85rem;
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .teamwork-content-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .teamwork-features-left,
+  .teamwork-features-right {
+    width: 100%;
+    max-width: 344px;
+    gap: 10px;
+  }
+
+  .teamwork-central-image-container {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    max-width: 344px;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 344px;
+    height: auto;
+    min-height: 100px;
+    padding: 14px 16px;
+  }
+
+  .feature-card-title {
+    font-size: 0.8125rem;
+    white-space: normal;
+  }
+
+  .feature-card-description {
+    font-size: 0.75rem;
+  }
+}
+
+/* 📱 EXTRA SMALL MOBILE */
+@media (max-width: 480px) {
+  .teamwork-section {
+    padding: 40px 15px;
+  }
+
+  .teamwork-title {
+    font-size: 1.5rem;
+  }
+
+  .teamwork-description {
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+  }
+
+  .teamwork-content-grid {
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 12px 14px;
+    min-height: 90px;
+  }
+
+  .feature-card-title {
+    font-size: 0.75rem;
+  }
+
+  .feature-card-description {
+    font-size: 0.7rem;
+  }
+}
+
+/* 🖥️ LARGE SCREENS */
+@media (min-width: 1200px) {
+  .teamwork-title {
+    font-size: 3.2rem;
+  }
+
+  .teamwork-description {
+    font-size: 1.0625rem;
+  }
+}
+
+
+/* 📱 MOBILE RESPONSIVE STYLES — IMPROVED BALANCE & ALIGNMENT */
+@media (max-width: 768px) {
+  .teamwork-section {
+    padding: 60px 20px;
+  }
+
+  .teamwork-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .teamwork-title {
+    font-size: 1.875rem; /* Slightly larger for impact */
+    line-height: 1.3;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .teamwork-description {
+    font-size: 0.875rem;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+    padding: 0 12px;
+    line-height: 1.6;
+  }
+
+  .teamwork-content-grid {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .teamwork-features-left,
+  .teamwork-features-right {
+    width: 100%;
+    max-width: 344px;
+    gap: 16px; /* Increased gap for breathing room */
+    align-items: center;
+  }
+
+  .teamwork-central-image-container {
+    width: 100%;
+    height: auto;
+    margin: 32px 0;
+    max-width: 344px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teamwork-central-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 344px;
+    height: auto;
+    min-height: 110px; /* Ensures consistent minimum height */
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .feature-card-icon-wrapper {
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+
+  .feature-card-title {
+    font-size: 0.875rem;
+    white-space: normal;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .feature-card-description {
+    font-size: 0.78125rem; /* 12.5px — more readable than 0.75rem */
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Optional: Add subtle transition for polish */
+  .feature-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* 📱 EXTRA SMALL MOBILE — FURTHER BALANCED */
+@media (max-width: 480px) {
+  .teamwork-section {
+    padding: 50px 16px;
+  }
+
+  .teamwork-title {
+    font-size: 1.625rem; /* 26px — more proportional */
+    line-height: 1.3;
+    margin-bottom: 14px;
+    padding: 0 6px;
+  }
+
+  .teamwork-description {
+    font-size: 0.8125rem;
+    margin-bottom: 36px;
+    padding: 0 8px;
+  }
+
+  .teamwork-content-grid {
+    gap: 28px;
+  }
+
+  .teamwork-features-left,
+  .teamwork-features-right {
+    gap: 14px;
+  }
+
+  .teamwork-central-image-container {
+    margin: 28px 0;
+  }
+
+  .feature-card {
+    padding: 14px;
+    min-height: 100px;
+  }
+
+  .feature-card-title {
+    font-size: 0.8125rem;
+  }
+
+  .feature-card-description {
+    font-size: 0.75rem; /* 12px — still readable */
+    -webkit-line-clamp: 3;
+  }
 }
